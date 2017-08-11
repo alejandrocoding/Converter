@@ -9,6 +9,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "preprod": "npm install enhanced-resolve@3.1.0",
+    "prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
