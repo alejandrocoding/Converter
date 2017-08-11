@@ -22,8 +22,6 @@ That would be enough from the library perspective. From the Web App, follow thes
 
 That's it! :)
 
-Made by `Alejandro Lora`.
-
 ## Development server
 
 Run `npm start` or `ng serve` for a dev server. 
@@ -41,11 +39,3 @@ Use the `-prod` flag for a production build.
 The test files included only belong to Converter Library.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Documentation
-
-To see the documentation, open the index.html file located within the documentation folder at the root level.
-
-A server is not needed to launch it.
-
-Thanks to Compodoc for this nice tool [Compodoc](https://github.com/compodoc/compodoc).
