@@ -1,0 +1,11 @@
+@import 'bootstrap_config';
+
+@import 'base';
+html {
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: $primary-color-text;
+    background-color: $primary-color;
+  }
+}

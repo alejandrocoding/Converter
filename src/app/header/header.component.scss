@@ -1,0 +1,12 @@
+@import 'base';
+header {
+  height: $head-height;
+  line-height: $head-height;
+  background-color: $primary-color-dark;
+  .title {
+    font-size: 34px;
+    line-height: $head-height;
+    margin: 0;
+    padding-left: 25px;
+  }
+}

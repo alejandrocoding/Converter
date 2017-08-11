@@ -1,0 +1,106 @@
+@import 'base';
+:host {
+  display: block;
+  width: 100%;
+  min-height: calc(100vh - (#{$head-height} + #{$footer-height}));
+}
+
+.wrapper {
+  padding: 25px;
+  user-select: none;
+  .title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+  }
+  .box {
+    padding: 50px;
+    background-color: $primary-color-dark;
+    border-radius: 5px;
+  }
+  select {
+    max-width: $select-max-width;
+    display: inline-block;
+    height: $select-heigt;
+    border: none;
+    user-select: none;
+  }
+  .select-from {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .select-to {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon-reverse {
+    display: inline-flex;
+    margin-left: 35px;
+    background-color: $accent-color;
+    padding: 10px;
+    border-radius: $radius-max;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.15s ease-out;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.15s ease-in;
+    }
+  }
+  .unit-input {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+    input {
+      width: 100%;
+      max-width: $input-max-width;
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      border-bottom: 1px solid $accent-color;
+      text-align: center;
+      color: $white;
+    }
+  }
+  .result {
+    margin-top: 50px;
+    text-align: center;
+    .text {
+      font-size: 40px;
+      color: $accent-color;
+      font-weight: bold;
+      text-shadow: 0px 1px 0px $black;
+      word-wrap: break-word;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .wrapper {
+    .select-from, .select-to {
+        margin: 25px auto;
+        text-align: left;
+        flex-direction: inherit;
+        select {
+          max-width: initial;
+        }
+    }
+  }
+}
+
+@media(max-width: 350px) {
+  .wrapper {
+    .icon-reverse {
+      position: absolute;
+      top: 100px;
+      right: 15px;
+      z-index: 100;
+    }
+    .unit-input {
+      margin-top: 100px;
+    }
+  }
+}
